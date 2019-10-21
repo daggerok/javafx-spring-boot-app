@@ -9,14 +9,10 @@ import org.springframework.stereotype.Component;
 
 @Log4j2
 @Component
-public class SpringBootApp {
+public class StageStartedListener {
 
     @EventListener
     public void listen(StageStartedEvent event) {
         log.info("FX app started.");
-    }
-
-    public static void main(String[] args) {
-        Application.launch(JavaFXApp.class, args);
     }
 }
