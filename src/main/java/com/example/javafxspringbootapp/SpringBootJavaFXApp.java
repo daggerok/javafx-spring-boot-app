@@ -1,6 +1,7 @@
 package com.example.javafxspringbootapp;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -19,6 +20,12 @@ public class SpringBootJavaFXApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         applicationContext.publishEvent(new StageStartedEvent(primaryStage));
+    }
+
+    @Override
+    public void stop() throws Exception {
+        applicationContext.close();
+        Platform.exit();
     }
 
     public static void main(String[] args) {

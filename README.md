@@ -21,6 +21,12 @@ public class SpringBootJavaFXApp extends Application {
         applicationContext.publishEvent(new StageStartedEvent(primaryStage));
     }
 
+    @Override
+    public void stop() throws Exception {
+        applicationContext.close();
+        Platform.exit();
+    }
+
     public static void main(String[] args) {
         Application.launch(SpringBootJavaFXApp.class, args);
     }
