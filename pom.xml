@@ -2,22 +2,50 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example</groupId>
-    <artifactId>javafx-spring-boot-app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>javafx-spring-boot-app</name>
     <description>Demo project for Spring Boot</description>
+    <groupId>com.example</groupId>
+    <artifactId>javafx-spring-boot-app</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <name>Maksim Kostromin</name>
+            <email>daggerok@gmail.com</email>
+            <organization>Sets of open source Maksim Kostromin aka daggerok projects</organization>
+            <organizationUrl>https://github.com/daggerok/</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/daggerok/javafx-spring-boot-app/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Maksim Kostromin aka daggerok open source projects sets</name>
+        <url>https://github.com/daggerok/</url>
+    </organization>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:daggerok/javafx-spring-boot-app.git</developerConnection>
+        <connection>scm:git:https://github.com/daggerok/javafx-spring-boot-app.git</connection>
+        <url>https://github.com/daggerok/javafx-spring-boot-app</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <java.version>13</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
+        <encoding>UTF-8</encoding>
+        <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+
         <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
     </properties>
 
