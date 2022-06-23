@@ -34,5 +34,5 @@ public class SpringBootJavaFXApp extends Application {
 ```
 
 links:
-
+* [GitHub: daggerok/javafx-examples - JavaFX examples](https://github.com/daggerok/javafx-examples)
 * [YouTube: Fully Reactive: Spring, Kotlin, and JavaFX Playing Together](https://www.youtube.com/watch?v=Lse51SpfKHo)
